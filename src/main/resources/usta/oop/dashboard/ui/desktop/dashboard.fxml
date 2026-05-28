@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane tabClosingPolicy="UNAVAILABLE" stylesheets="@/css/style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+
+    <Tab text="Dashboard Estratégico">
+        <SplitPane orientation="VERTICAL" dividerPositions="0.45">
+            <HBox spacing="5.0" VBox.vgrow="ALWAYS">
+                <fx:include source="employees-in-vacations-indicator.fxml" HBox.hgrow="ALWAYS" fx:id="employeesInVacationsIndicator"/>
+                <fx:include source="employees-in-permit-indicator.fxml" HBox.hgrow="ALWAYS" fx:id="employeesInPermitIndicator"/>
+                <fx:include source="employees-with-pending-vacations-indicator.fxml" HBox.hgrow="ALWAYS" fx:id="employeesWithPendingVacationsIndicator"/>
+            </HBox>
+
+            <HBox spacing="5.0" VBox.vgrow="ALWAYS">
+                <fx:include source="inactive-employees-chart.fxml" HBox.hgrow="ALWAYS" fx:id="inactiveEmployeesChart"/>
+                <fx:include source="administrative-situation-history.fxml" HBox.hgrow="ALWAYS" fx:id="adminSituationTable"/>
+            </HBox>
+        </SplitPane>
+    </Tab>
+
+    <Tab text="Gestión de Servidores">
+        <fx:include source="employees-crud.fxml"/>
+    </Tab>
+
+</TabPane>

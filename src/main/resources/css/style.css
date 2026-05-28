@@ -1,0 +1,33 @@
+.coral-background {
+    -fx-background-color: lightcoral;
+}
+
+.blue-background {
+    -fx-background-color: lightblue;
+}
+
+.green-background {
+    -fx-background-color: lightgreen;
+}
+
+.yellow-background {
+    -fx-background-color: lightyellow;
+}
+
+.gray-background {
+    -fx-background-color: lightgray;
+}
+
+.indicator-container {
+    -fx-padding: 15;
+}
+
+.indicator-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.indicator-number {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="15.0" stylesheets="@/css/style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="usta.oop.dashboard.ui.desktop.controller.EmployeesCrudController">
+
+    <padding>
+        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+    </padding>
+
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+        <TextField fx:id="txtId" promptText="Cédula (ID)" HBox.hgrow="ALWAYS"/>
+        <TextField fx:id="txtNombre" promptText="Nombre Completo" HBox.hgrow="ALWAYS"/>
+        <TextField fx:id="txtDepartamento" promptText="Departamento" HBox.hgrow="ALWAYS"/>
+        <TextField fx:id="txtRol" promptText="Rol/Cargo" HBox.hgrow="ALWAYS"/>
+        <Button text="Guardar Servidor" onAction="#handleGuardar" styleClass="btn-primary"/>
+    </HBox>
+
+    <TableView fx:id="tablaEmpleados" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colId" text="Cédula" prefWidth="100.0"/>
+            <TableColumn fx:id="colNombre" text="Nombre" prefWidth="250.0"/>
+            <TableColumn fx:id="colDepartamento" text="Departamento" prefWidth="200.0"/>
+            <TableColumn fx:id="colRol" text="Rol" prefWidth="200.0"/>
+        </columns>
+    </TableView>
+
+    <HBox alignment="CENTER_RIGHT">
+        <Button text="Eliminar Seleccionado" onAction="#handleBorrar" styleClass="btn-danger"/>
+    </HBox>
+
+</VBox>

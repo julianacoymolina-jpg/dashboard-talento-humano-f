@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.tilesfx.Tile?>
+
+<Tile skinType="CHARACTER"
+      title="Servidores en vacaciones"
+      titleAlignment="CENTER"/>
